@@ -1,0 +1,106 @@
+
+.ReactTable {
+  cursor: default;
+  position: relative;
+  border: 0;
+
+  .-odd {
+    background-color: #fafafa;
+  }
+
+  .-even {
+    background-color: white;
+  }
+
+  .rt-table {
+    border: 1px solid rgba(0, 0, 0, 0.1)
+  }
+
+  .rt-thead.-header {
+    box-shadow: none;
+    font-weight: 600;
+    border-right: 0;
+
+    .rt-tr {
+      height: 50px;
+      background-color: #ebebeb;
+
+      .rt-th {
+        border-right: 0;
+        padding: 20px;
+        cursor: default;
+
+        div {
+          text-align: left;
+        }
+      }
+
+    }
+  }
+
+  .rt-noData {
+    display: none;
+  }
+
+  .rt-tbody {
+    border: none;
+
+    .rt-tr-group {
+      border: none;
+
+      .rt-tr {
+        .rt-td {
+          border-right: 0;
+          text-align: left;
+
+        }
+      }
+    }
+  }
+
+  .rt-resizable-header-content {
+    font-weight: 600;
+  }
+
+  .pagination-bottom {
+    margin: auto;
+    padding-top: 30px;
+
+    .Table__pagination {
+      display: flex;
+    }
+
+    .Table__pageButton {
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+
+      i {
+        padding: 5px;
+        font-weight: 100;
+
+      }
+    }
+
+    .Table__visiblePagesWrapper {
+      font-weight: 400;
+      margin: auto;
+      padding: 0 10px 0 10px;
+    }
+  }
+}
+
+.ReactSelect {
+  max-width: 400px;
+  margin: 10px 0 0 0;
+}
+
+.ReactToggle {
+  max-width: 400px;
+  margin: 20px 0 0 0;
+
+  p {
+    margin: 20px 0 0 0;
+    padding: 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "client-install": "yarn build --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"yarn server \" \"yarn client \""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "request": "2.88.2",
+    "request-promise": "4.2.5"
+  },
+  "devDependencies": {
+    "concurrently": "5.1.0",
+    "nodemon": "2.0.3"
+  }
+}
